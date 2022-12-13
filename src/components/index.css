@@ -1,0 +1,85 @@
+.main{
+    background-color:black;
+    /* height: 140vh; */
+}
+
+.header-main{
+    color: white;
+    display:grid;
+    place-items: center;
+    box-shadow: 0px 2px 2px aliceblue;
+}
+
+.board-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.board-main{
+    height: 100vh;
+}
+
+.single-box{
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, .7);
+    background-color: 2px solid rgba(255, 255, 255, 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.keyboard-main{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-areas: 
+    "k1 k1 k1 k1 k1 k1 k1 k1 k1 k1 k1 k1 "
+    ". k2 k2 k2 k2 k2 k2 k2 k2 k2 k2 ."
+    "k3 k3 k3 k3 k3 k3 k3 k3 k3 k3 k3 k3 ";
+    grid-template-rows: 100px 100px 100px;
+    margin-top: 50px;
+
+}
+
+.key-1{
+    grid-area: k1;
+display: flex;
+
+gap: 2rem;
+}
+.key-2{
+    grid-area: k2;
+    display: flex;
+    gap: 2rem;
+}
+.key-3{
+    grid-area: k3;
+    display: flex;
+    gap: 2rem;
+}
+
+.single-keyboard-box{
+    border: 2px solid gray;
+    height: 47px;
+width: 43px;
+display: flex;
+justify-content: center;
+cursor: pointer;
+}
+
+.single-keyboard-box-spe{
+    border: 2px solid gray;
+    height: 47px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
